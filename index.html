@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/be5951762d.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Cafeteria SASS</title>
+    <link rel="shortcut icon" href="./build/img/logo.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&family=Raleway:ital,wght@0,700;0,900;1,700;1,900&family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./build/css/app.css" />
+  </head>
+  <body>
+    <header class="header header-inicio">
+      <div class="contenido-header contenedor">
+        <div class="barra">
+          <div class="logo">
+            <picture>
+              <img
+                loading="lazy"
+                decoding="sync"
+                src="./build/img/logo.svg"
+                width="500"
+                height="300"
+                alt="Imagen logo"
+              />
+            </picture>
+          </div>
+
+          <i class="fa-solid fa-bars barras"></i>
+
+          <nav class="nav-principal">
+            <div class="menu-nav">
+              <a class="menu-nav__enlace activo" href="index.html">Inicio</a>
+              <a class="menu-nav__enlace" href="nosotros.html">Nosotros</a>
+              <a class="menu-nav__enlace" href="proceso.html">Proceso</a>
+              <a class="menu-nav__enlace" href="menu.html">Menú</a>
+              <a class="menu-nav__enlace" href="galeria.html">Galería</a>
+              <a class="menu-nav__enlace" href="contacto.html">Contacto</a>
+            </div>
+          </nav>
+        </div>
+
+        <div class="texto-header">
+          <h1>Disfruta una deliciosa taza de café</h1>
+        </div>
+      </div>
+    </header>
+
+    <main class="contenedor contenido-principal text-center">
+      <section class="conoce">
+        <h2><span>Conoce más</span> Sobre Nosotros</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+          maiores atque commodi saepe inventore, veniam aut repellendus dolores,
+          tenetur quas ex architecto corrupti eum? Aspernatur fuga ea
+          repudiandae magnam delectus? Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Labore est nostrum amet? Beatae illum, commodi
+          repudiandae dolor possimus, aliquam officia neque est cupiditate animi
+          accusamus pariatur dignissimos sapiente doloribus molestiae.
+        </p>
+      </section>
+
+      <section class="iconos">
+        <ul class="listado-iconos">
+          <li>
+            <img src="./build/img/icono_cafe.svg" alt="icono café" />
+            <p>Café</p>
+          </li>
+
+          <li>
+            <img src="./build/img/icono_postre.svg" alt="icono postres" />
+            <p>Postres</p>
+          </li>
+
+          <li>
+            <img src="./build/img/icono_te.svg" alt="icono té" />
+            <p>Té</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="experiencia">
+        <h2><span>Vive la</span> experiencia</h2>
+
+        <div class="galeria">
+          <div class="imagen">
+            <picture>
+              <source
+                srcset="./build/img/galeria/galeria_01.avif"
+                type="image/avif"
+              />
+              <source
+                srcset="./build/img/galeria/galeria_01.webp"
+                type="image/webp"
+              />
+              <img
+                loading="lazy"
+                decoding="sync"
+                src="./build/img/galeria/galeria_01.jpg"
+                width="500"
+                height="300"
+                alt=""
+              />
+            </picture>
+          </div>
+
+          <div class="imagen">
+            <picture>
+              <source
+                srcset="./build/img/galeria/galeria_02.avif"
+                type="image/avif"
+              />
+              <source
+                srcset="./build/img/galeria/galeria_02.webp"
+                type="image/webp"
+              />
+              <img
+                loading="lazy"
+                decoding="sync"
+                src="./build/img/galeria/galeria_02.jpg"
+                width="500"
+                height="300"
+                alt=""
+              />
+            </picture>
+          </div>
+
+          <div class="imagen">
+            <picture>
+              <source
+                srcset="./build/img/galeria/galeria_03.avif"
+                type="image/avif"
+              />
+              <source
+                srcset="./build/img/galeria/galeria_03.webp"
+                type="image/webp"
+              />
+              <img
+                loading="lazy"
+                decoding="sync"
+                src="./build/img/galeria/galeria_03.jpg"
+                width="500"
+                height="300"
+                alt=""
+              />
+            </picture>
+          </div>
+
+          <div class="imagen">
+            <picture>
+              <source
+                srcset="./build/img/galeria/galeria_04.avif"
+                type="image/avif"
+              />
+              <source
+                srcset="./build/img/galeria/galeria_04.webp"
+                type="image/webp"
+              />
+              <img
+                loading="lazy"
+                decoding="sync"
+                src="./build/img/galeria/galeria_04.jpg"
+                width="500"
+                height="300"
+                alt=""
+              />
+            </picture>
+          </div>
+
+          <div class="imagen">
+            <picture>
+              <source
+                srcset="./build/img/galeria/galeria_05.avif"
+                type="image/avif"
+              />
+              <source
+                srcset="./build/img/galeria/galeria_05.webp"
+                type="image/webp"
+              />
+              <img
+                loading="lazy"
+                decoding="sync"
+                src="./build/img/galeria/galeria_05.jpg"
+                width="500"
+                height="300"
+                alt=""
+              />
+            </picture>
+          </div>
+
+          <div class="imagen">
+            <picture>
+              <source
+                srcset="./build/img/galeria/galeria_06.avif"
+                type="image/avif"
+              />
+              <source
+                srcset="./build/img/galeria/galeria_06.webp"
+                type="image/webp"
+              />
+              <img
+                loading="lazy"
+                decoding="sync"
+                src="./build/img/galeria/galeria_06.jpg"
+                width="500"
+                height="300"
+                alt=""
+              />
+            </picture>
+          </div>
+
+          <div class="imagen">
+            <picture>
+              <source
+                srcset="./build/img/galeria/galeria_07.avif"
+                type="image/avif"
+              />
+              <source
+                srcset="./build/img/galeria/galeria_07.webp"
+                type="image/webp"
+              />
+              <img
+                loading="lazy"
+                decoding="sync"
+                src="./build/img/galeria/galeria_07.jpg"
+                width="500"
+                height="300"
+                alt=""
+              />
+            </picture>
+          </div>
+
+          <div class="imagen">
+            <picture>
+              <source
+                srcset="./build/img/galeria/galeria_08.avif"
+                type="image/avif"
+              />
+              <source
+                srcset="./build/img/galeria/galeria_08.webp"
+                type="image/webp"
+              />
+              <img
+                loading="lazy"
+                decoding="sync"
+                src="./build/img/galeria/galeria_08.jpg"
+                width="500"
+                height="300"
+                alt=""
+              />
+            </picture>
+          </div>
+
+          <div class="imagen">
+            <picture>
+              <source
+                srcset="./build/img/galeria/galeria_09.avif"
+                type="image/avif"
+              />
+              <source
+                srcset="./build/img/galeria/galeria_09.webp"
+                type="image/webp"
+              />
+              <img
+                loading="lazy"
+                decoding="sync"
+                src="./build/img/galeria/galeria_09.jpg"
+                width="500"
+                height="300"
+                alt=""
+              />
+            </picture>
+          </div>
+
+          <div class="imagen">
+            <picture>
+              <source
+                srcset="./build/img/galeria/galeria_10.avif"
+                type="image/avif"
+              />
+              <source
+                srcset="./build/img/galeria/galeria_10.webp"
+                type="image/webp"
+              />
+              <img
+                loading="lazy"
+                decoding="sync"
+                src="./build/img/galeria/galeria_10.jpg"
+                width="500"
+                height="300"
+                alt=""
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section class="nuestro-menu">
+      <h2 class="heading-blanco"><span>Nuestro Delicioso</span>Menú</h2>
+
+      <div class="contenedor grid-menu">
+        <div class="menu cafe">
+          <h3>Café</h3>
+
+          <ul>
+            <li>
+              <p>
+                Café Latte
+                <span>Café Espresso con leche caliente evaporada</span>
+              </p>
+              <p class="precio">$25</p>
+            </li>
+            <li>
+              <p>Café Mocha <span>Espresso con crema batida</span></p>
+              <p class="precio">$30</p>
+            </li>
+            <li>
+              <p>Café Americano <span>Café Negro</span></p>
+              <p class="precio">$30</p>
+            </li>
+            <li>
+              <p>Capuccino<span>Espresso con una capa suave de espuma</span></p>
+              <p class="precio">$25</p>
+            </li>
+            <li>
+              <p>
+                Café Mocha Frio<span>Espresso, dulce con mocha y leche.</span>
+              </p>
+              <p class="precio">$29</p>
+            </li>
+            <li>
+              <p>
+                Mocha Frio Quemado<span
+                  >Espresso, hielo, con azucar quemada y mantequilla.</span
+                >
+              </p>
+              <p class="precio">$35</p>
+            </li>
+            <li>
+              <p>Latte con Caramelo<span>Espresso, leche y caramelo.</span></p>
+              <p class="precio">$39</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="menu comida">
+          <h3>Comida</h3>
+
+          <ul>
+            <li>
+              <p>
+                Baguette de Pollo
+                <span>Delicioso Baguette con pollo a la plancha</span>
+              </p>
+              <p class="precio">$45</p>
+            </li>
+            <li>
+              <p>
+                Baguette Pollo y Queso
+                <span>Baguette combinado con Pollo y Queso Manchego</span>
+              </p>
+              <p class="precio">$50</p>
+            </li>
+            <li>
+              <p>
+                Baguette con Tocino<span
+                  >Baguette con especias y verduras, además de tocino</span
+                >
+              </p>
+              <p class="precio">$50</p>
+            </li>
+            <li>
+              <p>
+                Baguette de Jamón<span
+                  >Delicioso Baguette con Jamón y Especias</span
+                >
+              </p>
+              <p class="precio">$65</p>
+            </li>
+            <li>
+              <p>
+                Baguette con Jamón, Queso y Tocino<span
+                  >El especial de la casa</span
+                >
+              </p>
+              <p class="precio">$69</p>
+            </li>
+            <li>
+              <p>
+                Sandwich de Pollo<span
+                  >Delicioso sandwich con Pollo y especies</span
+                >
+              </p>
+              <p class="precio">$65</p>
+            </li>
+            <li>
+              <p>
+                Sandwich de Jamón y queso<span
+                  >Queso Amarillo con Jamón y Queso</span
+                >
+              </p>
+              <p class="precio">$59</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="nuestros-testimoniales contenedor bg-white margin-negativo-10"
+    >
+      <h2><span>Lo que dicen nuestros</span>Clientes</h2>
+
+      <div class="testimonial">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis esse
+          cumque distinctio excepturi, id accusantium illum laborum tempora
+          nobis asperiores sapiente voluptates nihil, labore cupiditate saepe
+          eum ullam soluta quod.
+        </p>
+
+        <p class="autor">- Gabriel D.</p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="contenedor contenido-footer bg-white">
+        <div class="footer-box ubicacion">
+          <h3>Ubicación</h3>
+          <p>Nicolas Copérnico #5990</p>
+          <p>Morelia Mich.</p>
+        </div>
+
+        <div class="footer-box reservacion">
+          <h3>Reservación</h3>
+          <p>Tel. 34122100</p>
+          <a href="tel:+5234122100">Llamar</a>
+        </div>
+
+        <div class="footer-box horario">
+          <h3>Horario</h3>
+          <p>Lun-Jue: 11:00 - 22:00</p>
+          <p>Vie-Sab: 09:00 - 24:00</p>
+          <p>Domingo: Cerrado</p>
+        </div>
+      </div>
+
+      <p class="copyright">
+        Todos los derechos reservados. | <strong>&copy; DevInside</strong> | La
+        cafetería
+      </p>
+    </footer>
+
+    <script src="./build/js/app.js"></script>
+  </body>
+</html>

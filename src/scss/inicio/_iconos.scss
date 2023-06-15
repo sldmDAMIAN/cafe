@@ -1,0 +1,37 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.iconos{
+    margin-top: 5rem;
+}
+
+.listado-iconos {
+
+    @include m.tablet {
+        @include m.grid(3, 5rem);
+        margin-top: 5rem;
+        
+    }
+    
+
+    li {
+        display: flex;
+        flex-direction: column;        
+        
+
+        img {
+            max-height: 20rem;
+            @include m.tablet {
+                max-height: 10rem;
+            }
+            
+        }
+
+        p {
+            font-family: v.$fuente_cursiva;
+            font-size: 3.2rem;
+            color: v.$primario;
+            margin: 0 0 5rem 0;
+        }
+    }
+}

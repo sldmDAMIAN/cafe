@@ -1,0 +1,88 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+
+.barra {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.barras {
+  color: v.$blanco;
+  font-size: 3rem;
+  cursor: pointer;
+  z-index: 11;
+}
+
+@include m.xl_desktop {
+    .barras {
+        display: none;
+    }
+}
+
+.menu-nav {
+    display: flex;
+    gap: 2rem;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+}
+
+.menu-nav__enlace {
+  font-weight: 700;
+
+  &:hover,
+  &.activo {
+  color: v.$secundario;
+  }
+}
+
+
+@media (max-width: 1200px){
+    .nav-principal {
+        height: 0px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background-color: rgba(22, 18, 34, 0.9);
+        transition: 0.5s;
+        overflow: hidden;
+
+        &.active{
+          height: 100vh;
+        }
+    }
+
+  .menu-nav {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: 8rem auto 0 auto;
+    text-align: center;
+    transition: 0.5s;
+    opacity: 0;
+    font-size: 3rem;
+    gap: 3rem;
+  }
+
+  .menu-nav__enlace {
+    padding: 1rem 2rem;
+
+    &:hover {
+      width: 80vw;
+      display: inline-block;
+      border-radius: .7rem;
+      background-color: rgba(109, 107, 107, 0.3);
+
+    }
+  }
+
+  .nav-principal.active .menu-nav {
+    opacity: 1;
+  }
+
+}
